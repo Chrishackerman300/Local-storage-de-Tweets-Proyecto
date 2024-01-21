@@ -8,6 +8,7 @@
     --color1: #3498db;
     --color2: #fbfcfc;
     --color1-hover: #58d68d; 
+    --bg-alert: #db2777;
 }
 
 body{
@@ -46,7 +47,7 @@ body{
 
 .formulario{
     width: 100%;
-    height: calc(100vh - 50vh);
+    height: 30vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -87,7 +88,7 @@ body{
 }
 
 .display-tweet{
-    width: 60%;
+    width: 50%;
 }
 
 .sub-title{
@@ -99,4 +100,43 @@ body{
 .display{
     width: 100%;
     margin-top: 40px;
+}
+
+.error{
+    width: 60%;
+    margin: 20px auto;
+    background: var(--bg-alert);
+    padding: 15px 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: var(--color2);
+    box-shadow: 0 0 10px rgba(0,0,0,.4);
+    border-radius: 10px;
+}
+
+.lista{
+    width: 100%;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.borrar-tweet{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    font-size: 1rem;
+    cursor: pointer;
+    text-align: right;
+    background: crimson;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    line-height: 22px;
+    border-radius: 100%;
+    color: var(--color2);
 }
